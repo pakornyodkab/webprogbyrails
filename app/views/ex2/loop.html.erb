@@ -1,0 +1,20 @@
+<h1>Ex2#loop</h1>
+
+
+<% puts @a_notint %>
+<% puts @b_notint %>
+
+<% if @a_notint == false  and @b_notint == false %>
+	<%for i in @a..@b do%>
+		<%= i %><br>
+	<% end %>
+<% end %>
+<% if @a_notint %>
+	<%= "you don't give a " %><br>
+<% end %>
+<% if @b_notint %>
+	<%= "you don't give b  " %><br>
+<% end %>
+
+
+
