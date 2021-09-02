@@ -1,0 +1,15 @@
+%h1 Ex3#create post
+
+%p scope of user_id that you can select
+-for i in 1..@num_user
+	=i
+
+
+- if(@createcomplete)
+	%p create post complete !!!
+- else
+	-if (@failbynotint)
+		%p create post not complete. check that your user_id are Integer or not
+	-if (@failbyUIDnotinscope)
+		%p create post not complete. check that your user_id are in scope
+

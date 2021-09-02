@@ -19,4 +19,7 @@ class Ex2Controller < ApplicationController
     @b = input2.to_i
 
   end
+
+  def testhaml
+  end
 end
