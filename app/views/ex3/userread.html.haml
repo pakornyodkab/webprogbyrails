@@ -1,0 +1,19 @@
+%h1 Ex3#user read
+%p Find me in app/views/ex3/userread.html.haml
+
+%p scope of user_id that you can select
+-for i in 1..@num_user
+	=i
+
+- if(@createcomplete)
+	-u = User.find(@uid)
+	%p #{u.posts.all.each{|msg|}}
+
+    
+- else
+	-if (@failbynotint)
+		%p read post not complete. check that your user_id are Integer or not
+	-if (@failbyUIDnotinscope)
+		%p read post not complete. check that your user_id are in scope
+
+
